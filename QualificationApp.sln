@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QualificationApp.Api", "QualificationApp.Api\QualificationApp.Api.csproj", "{CC06BD8F-EB88-4AF8-9E1C-827B497CC31E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QualificationApp.Api", "QualificationApp.Api\QualificationApp.Api.csproj", "{CC06BD8F-EB88-4AF8-9E1C-827B497CC31E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{56495ACF-4A27-4EE0-9D48-619D3AC6F160}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QualificationApp.Domain", "QualificationApp.Domain\QualificationApp.Domain.csproj", "{DCFA9050-DD15-4849-B627-086EF76E7905}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QualificationApp.Domain", "QualificationApp.Domain\QualificationApp.Domain.csproj", "{DCFA9050-DD15-4849-B627-086EF76E7905}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{0DF3DD7E-1191-4532-800F-787B7425B02D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QualificationApp.Infrastructure", "QualificationApp.Infrastructure\QualificationApp.Infrastructure.csproj", "{95C28B2B-BEEA-434C-A71A-7E1170F35EC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QualificationApp.Infrastructure", "QualificationApp.Infrastructure\QualificationApp.Infrastructure.csproj", "{95C28B2B-BEEA-434C-A71A-7E1170F35EC3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{93F1782B-36BB-40B9-841E-59327A8E0ECF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{47C375E1-3C29-484D-B2E3-C82E0AB0F476}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QualificationApp.Utilities", "QualificationApp.Utilities\QualificationApp.Utilities.csproj", "{46504C67-AE83-4749-84E5-29BF530BEA0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,10 @@ Global
 		{95C28B2B-BEEA-434C-A71A-7E1170F35EC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95C28B2B-BEEA-434C-A71A-7E1170F35EC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95C28B2B-BEEA-434C-A71A-7E1170F35EC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46504C67-AE83-4749-84E5-29BF530BEA0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46504C67-AE83-4749-84E5-29BF530BEA0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46504C67-AE83-4749-84E5-29BF530BEA0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46504C67-AE83-4749-84E5-29BF530BEA0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +49,7 @@ Global
 		{CC06BD8F-EB88-4AF8-9E1C-827B497CC31E} = {93F1782B-36BB-40B9-841E-59327A8E0ECF}
 		{DCFA9050-DD15-4849-B627-086EF76E7905} = {56495ACF-4A27-4EE0-9D48-619D3AC6F160}
 		{95C28B2B-BEEA-434C-A71A-7E1170F35EC3} = {0DF3DD7E-1191-4532-800F-787B7425B02D}
+		{46504C67-AE83-4749-84E5-29BF530BEA0A} = {47C375E1-3C29-484D-B2E3-C82E0AB0F476}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5EF24B2-04DD-47D7-A98C-1B80AAFE7E6F}

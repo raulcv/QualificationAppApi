@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using QualificationApp.Domain.Base;
 using QualificationApp.Domain.Dtos;
 using QualificationApp.Domain.Entity;
 using QualificationApp.Domain.Interfaces.Parametro.Pais;
@@ -43,34 +44,28 @@ namespace QualificationApp.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<PaisDto>> CreaarPais(PaisModel paisModel)
         {
-            PaisRespuesta paisRespuesta = new PaisRespuesta();
             var respuesta = await _paisRepository.CrearPais(paisModel);
             int idPais = Int32.Parse(respuesta.Retorno1);
             if (respuesta.Resultado == 1)
             {
                 var paisRead = _paisRepository.ObtenerPaisPorId(idPais);
-                paisRespuesta.paisData.Add(paisRead.Result);
+                respuesta.Data.Add(paisRead.Result);
             }
-            paisRespuesta.Resultado = respuesta.Resultado;
-            paisRespuesta.Mensaje = respuesta.Mensaje;
-            return Ok(paisRespuesta);
+            return Ok(respuesta);
         }
 
         //PuT api/paises/1
         [HttpPut("{idPais}")]
         public async Task<ActionResult> ModificarPais(int idPais, PaisModel paisCrearDto)
         {
-            PaisRespuesta paisRespuesta = new PaisRespuesta();
             paisCrearDto.IdPais = idPais;
             var respuesta = await _paisRepository.ModificarPais(paisCrearDto);
             if (respuesta.Resultado == 1)
             {
                 var paisRead = _paisRepository.ObtenerPaisPorId(idPais);
-                paisRespuesta.paisData.Add(paisRead.Result);
+                respuesta.Data.Add(paisRead.Result);
             }
-            paisRespuesta.Resultado = respuesta.Resultado;
-            paisRespuesta.Mensaje = respuesta.Mensaje;
-            return Ok(paisRespuesta);
+            return Ok(respuesta);
         }
         //DELETE api/paises/1
         [HttpDelete("{idPais}")]
