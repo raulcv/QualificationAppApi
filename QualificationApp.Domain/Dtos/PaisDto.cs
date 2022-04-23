@@ -13,8 +13,8 @@ namespace QualificationApp.Domain.Dtos
         public string Gentilicio { get; set; }
         public string Estado { get; set; }
     }
-    public class PaisRespuesta : RespuestaTransaction<PaisDto>
-    {
-        public List<PaisDto> paisData { get; set; } = new List<PaisDto>();
-    }
+    //public class PaisRespuesta : RespuestaTransaction<PaisDto>
+    //{
+    //    public List<PaisDto> paisData { get; set; } = new List<PaisDto>();
+    //}
 }
