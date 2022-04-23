@@ -28,7 +28,6 @@ namespace QualificationApp.Api.Controllers
         public async Task<ActionResult> ListarOcupaciones()
         {
             var OcupacionItems = await _ocupacionRepository.ObtenerTodos();
-            throw new InvalidOperationException();
             return Ok(OcupacionItems);
         }
         // GET: api/ocupaciones
