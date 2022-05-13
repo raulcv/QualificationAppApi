@@ -10,6 +10,6 @@ namespace QualificationApp.Domain.Dtos
         public int IdOcupacion { get; set; }
         public string Descripcion { get; set; }
         public string Estado { get; set; }
-        public string TEST { get; set; }
+        public string TestColum { get; set; }
     }
 }
