@@ -7,15 +7,23 @@ Using .Net Core C#, Dapper ORM with Microsfot Sql Server DataBase. Docker file t
 
 1: clone with git.
 
-2: open in code editor like Visual Studio- VSCode.
+2: open in code editor like Visual Studio - VSCode.
 
 3: Change your awn database host in cofig file
 
-4: Run slq scripts included
-Finally RUN.
- 
-------------
-[repo-uri](https://github.com/raulcv/QualifiacionAppApi)
-------------
+4: Run included slq scripts
 
-Thanks for watching my repo.
+Finally RUN.
+ ```
+ dotnet run --project QualificationApp.Api.csproj
+ ```
+------------------------------------------------------------------------
+<p align="center">
+	With :heart: by <a href="https://www.raulcv.com" target="_blank">raulcv</a>
+</p>
+
+#
+<h3 align="center">🤗 If you found helpful this repo, let me a star 🐣</h3>
+<p align="center">
+<a href="https://www.buymeacoffee.com/iraulcv" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+</p>
