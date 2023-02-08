@@ -1,6 +1,6 @@
 ## Qualification api
-30% has been done
-Using .Net Core C#, Dapper ORM with Microsfot Sql Server DataBase. Docker file to deploy
+
+Using .Net Core C#, Dapper ORM with Microsfot Sql Server DataBase. Docker file to deploy and other [![NuGet](https://img.shields.io/badge/nuget-0077B5?style=for-the-badge&logo=nuget&logoColor=black)](https://www.nuget.org/) pkgs
 
 ------------
 ###### Run the project
