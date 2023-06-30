@@ -40,7 +40,8 @@ namespace QualificationApp.Utilities.Helper
         public static byte[] GetHash(string password, string salt)
         {
             byte[] unhashedBytes = Encoding.Unicode.GetBytes(string.Concat(salt, password));
-            SHA256Managed sha256 = new SHA256Managed();
+            // SHA256Managed sha256 = new SHA256Managed(); updated // fri 30 june 3023
+            SHA256 sha256 = SHA256.Create();
             byte[] hashedBytes = sha256.ComputeHash(unhashedBytes);
             return hashedBytes;
         }
